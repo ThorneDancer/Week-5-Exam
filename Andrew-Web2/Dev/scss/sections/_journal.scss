@@ -43,6 +43,10 @@
                 background-color: $primary;
                 margin-bottom: 8%;
 
+                @include lg{
+                    margin-bottom: 15%;
+                }
+
                 h1 {
                     color: $secondary;
                     font-family: 'Montserrat', sans-serif;

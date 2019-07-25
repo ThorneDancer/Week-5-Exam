@@ -368,6 +368,12 @@ textarea {
 footer {
   background-color: #080808;
   padding: 15% 0; }
+  @media (min-width: 730px) {
+    footer {
+      padding: 8% 0; } }
+  @media (min-width: 974px) {
+    footer {
+      padding: 4% 0; } }
   footer nav ul {
     display: flex;
     justify-content: center;
@@ -377,6 +383,12 @@ footer {
       footer nav ul li a:link, footer nav ul li a:visited {
         color: #6B6B6B;
         font-size: 1.5rem; }
+        @media (min-width: 730px) {
+          footer nav ul li a:link, footer nav ul li a:visited {
+            font-size: 1.875rem; } }
+        @media (min-width: 974px) {
+          footer nav ul li a:link, footer nav ul li a:visited {
+            font-size: 2.5rem; } }
       footer nav ul li a:hover, footer nav ul li a:active {
         color: #E1593C; }
   footer h4 {
@@ -385,6 +397,10 @@ footer {
     text-align: center;
     padding-top: 5%;
     font-weight: 400; }
+    @media (min-width: 730px) {
+      footer h4 {
+        font-size: 0.875rem;
+        padding-top: 3%; } }
     footer h4 span {
       color: #fff; }
 
@@ -582,6 +598,9 @@ footer {
   #journal section:nth-child(2) ul li {
     background-color: #EEEEEE;
     margin-bottom: 8%; }
+    @media (min-width: 974px) {
+      #journal section:nth-child(2) ul li {
+        margin-bottom: 15%; } }
     #journal section:nth-child(2) ul li h1 {
       color: #080808;
       font-family: 'Montserrat', sans-serif;
