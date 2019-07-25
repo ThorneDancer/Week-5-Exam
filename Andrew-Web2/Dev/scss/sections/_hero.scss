@@ -1,49 +1,84 @@
 /* =============
     Hero
 ============= */
-#hero{
+#hero {
     background-image: url("../img/hero/hero-1.jpg");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
     height: 694px;
+    @include lg {
+        height: 799px;
+    }
 
-    section:nth-child(1){
-        text-align: center;
+    section:nth-child(1) {
         padding-top: 45%;
+        text-align: center;
+        @include sm {
+            padding-top: 25%;
+        }
+        @include md {
+            padding-top: 15%;
+        }
+        @include lg {
+            padding-top: 10%;
+        }
 
-        h1{
+        h1 {
             color: $tertiary;
             font-size: rem-calc(24);
             font-weight: 400;
             padding-bottom: 2%;
+            @include md {
+                font-size: rem-calc(38);
+            }
+            @include lg {
+                font-size: rem-calc(60);
+            }
         }
 
-        h3{
+        h3 {
             color: $h3;
             font-size: rem-calc(14);
             font-weight: 400;
+            @include md {
+                font-size: rem-calc(25);
+            }
+            @include lg {
+                font-size: rem-calc(32);
+            }
         }
     }
 
-    section:nth-child(2){
-
-
-        a:link, a:visited{
+    section:nth-child(2) {
+        a:link,
+        a:visited {
+            border: 2.8px $white solid;
+            border-radius: rem-calc(125);
             color: $white;
             display: flex;
-            justify-content: center;
-            margin: 52% 39% 0;
-            border: 2.8px $white solid;
-            border-radius: rem-calc(100);
-            padding: 30px;
             font-size: rem-calc(18);
             font-weight: 400;
+            justify-content: center;
+            margin: 52% 39% 0;
+            padding: 30px;
+            @include sm {
+                margin: 30% 42%;
+            }
+            @include md {
+                font-size: rem-calc(23);
+                margin: 22% 44%;
+            }
+            @include lg {
+                font-size: rem-calc(32);
+                margin: 19% 44%;
+            }
         }
 
-        a:hover, a:active{
-            color: $h3;
-            border-color: $h3;
+        a:active,
+        a:hover {
+            border-color: $footer;
+            color: $footer;
         }
     }
 }

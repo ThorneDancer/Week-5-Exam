@@ -397,31 +397,71 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   height: 694px; }
+  @media (min-width: 974px) {
+    #hero {
+      height: 799px; } }
   #hero section:nth-child(1) {
-    text-align: center;
-    padding-top: 45%; }
+    padding-top: 45%;
+    text-align: center; }
+    @media (min-width: 528px) {
+      #hero section:nth-child(1) {
+        padding-top: 25%; } }
+    @media (min-width: 730px) {
+      #hero section:nth-child(1) {
+        padding-top: 15%; } }
+    @media (min-width: 974px) {
+      #hero section:nth-child(1) {
+        padding-top: 10%; } }
     #hero section:nth-child(1) h1 {
       color: #1A4B58;
       font-size: 1.5rem;
       font-weight: 400;
       padding-bottom: 2%; }
+      @media (min-width: 730px) {
+        #hero section:nth-child(1) h1 {
+          font-size: 2.375rem; } }
+      @media (min-width: 974px) {
+        #hero section:nth-child(1) h1 {
+          font-size: 3.75rem; } }
     #hero section:nth-child(1) h3 {
       color: #338595;
       font-size: 0.875rem;
       font-weight: 400; }
-  #hero section:nth-child(2) a:link, #hero section:nth-child(2) a:visited {
+      @media (min-width: 730px) {
+        #hero section:nth-child(1) h3 {
+          font-size: 1.5625rem; } }
+      @media (min-width: 974px) {
+        #hero section:nth-child(1) h3 {
+          font-size: 2rem; } }
+  #hero section:nth-child(2) a:link,
+  #hero section:nth-child(2) a:visited {
+    border: 2.8px #fff solid;
+    border-radius: 7.8125rem;
     color: #fff;
     display: flex;
+    font-size: 1.125rem;
+    font-weight: 400;
     justify-content: center;
     margin: 52% 39% 0;
-    border: 2.8px #fff solid;
-    border-radius: 6.25rem;
-    padding: 30px;
-    font-size: 1.125rem;
-    font-weight: 400; }
-  #hero section:nth-child(2) a:hover, #hero section:nth-child(2) a:active {
-    color: #338595;
-    border-color: #338595; }
+    padding: 30px; }
+    @media (min-width: 528px) {
+      #hero section:nth-child(2) a:link,
+      #hero section:nth-child(2) a:visited {
+        margin: 30% 42%; } }
+    @media (min-width: 730px) {
+      #hero section:nth-child(2) a:link,
+      #hero section:nth-child(2) a:visited {
+        font-size: 1.4375rem;
+        margin: 22% 44%; } }
+    @media (min-width: 974px) {
+      #hero section:nth-child(2) a:link,
+      #hero section:nth-child(2) a:visited {
+        font-size: 2rem;
+        margin: 19% 44%; } }
+  #hero section:nth-child(2) a:active,
+  #hero section:nth-child(2) a:hover {
+    border-color: #E1593C;
+    color: #E1593C; }
 
 /* =============
     Creative
