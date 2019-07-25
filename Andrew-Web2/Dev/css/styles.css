@@ -467,32 +467,84 @@ footer {
     Creative
 ============= */
 #creative {
-  padding-top: 15%;
-  background-color: #EEEEEE; }
+  background-color: #EEEEEE;
+  padding-top: 15%; }
+  @media (min-width: 730px) {
+    #creative {
+      display: grid;
+      grid-template-areas: "text image";
+      grid-template-columns: auto 246px;
+      padding-top: 0; } }
+  @media (min-width: 974px) {
+    #creative {
+      grid-template-areas: "image text";
+      grid-template-columns: 600px auto; } }
+  @media (min-width: 1167px) {
+    #creative {
+      grid-template-areas: ". image text .";
+      grid-template-columns: auto 600px 566px auto; } }
   #creative section:nth-child(1) {
-    padding-bottom: 25%;
     display: grid;
+    grid-area: text;
     grid-template-areas: ". content .";
-    grid-template-columns: 10px auto 10px; }
+    grid-template-columns: 10px auto 10px;
+    padding-bottom: 25%; }
+    @media (min-width: 730px) {
+      #creative section:nth-child(1) {
+        grid-template-columns: 8% auto 8%;
+        padding-bottom: 0; } }
+    @media (min-width: 974px) {
+      #creative section:nth-child(1) {
+        grid-template-columns: 16% auto 16%; } }
     #creative section:nth-child(1) aside {
       grid-area: content; }
+      @media (min-width: 730px) {
+        #creative section:nth-child(1) aside {
+          margin-top: 10%; } }
+      @media (min-width: 974px) {
+        #creative section:nth-child(1) aside {
+          margin-top: 40%; } }
       #creative section:nth-child(1) aside h1 {
-        text-align: center;
         font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
         font-size: 2.25rem;
-        padding-bottom: 3%; }
+        font-weight: 700;
+        padding-bottom: 3%;
+        text-align: center; }
+        @media (min-width: 730px) {
+          #creative section:nth-child(1) aside h1 {
+            font-size: 2.5rem;
+            text-align: left; } }
+        @media (min-width: 974px) {
+          #creative section:nth-child(1) aside h1 {
+            font-size: 2.75rem; } }
       #creative section:nth-child(1) aside p {
         font-family: 'Lato', sans-serif;
         font-size: 1rem;
-        text-align: justify;
-        line-height: 1.25rem; }
+        line-height: 1.25rem;
+        text-align: justify; }
+        @media (min-width: 730px) {
+          #creative section:nth-child(1) aside p {
+            font-size: 1.25rem;
+            line-height: 1.375rem;
+            text-align: left; } }
+        @media (min-width: 974px) {
+          #creative section:nth-child(1) aside p {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            text-align: justify; } }
   #creative section:nth-child(2) {
     background-image: url("../img/hero/hero-2.jpg");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    grid-area: image;
     height: 360px; }
+    @media (min-width: 730px) {
+      #creative section:nth-child(2) {
+        height: 306px; } }
+    @media (min-width: 974px) {
+      #creative section:nth-child(2) {
+        height: 600px; } }
 
 /* =============
     Journal
