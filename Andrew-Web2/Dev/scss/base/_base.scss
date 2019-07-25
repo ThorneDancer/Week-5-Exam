@@ -22,9 +22,9 @@ a:link, a:visited{
 
 .project-grid{
     display: grid;
-    grid-template-areas: ". content .";
+    grid-template-areas: ". display .";
     grid-template-columns: 10px auto 10px;
     >div{
-        grid-area: content;
+        grid-area: display;
     }
 }

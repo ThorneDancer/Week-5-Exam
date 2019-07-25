@@ -1,3 +1,40 @@
 /* =============
     Footer
 ============= */
+footer{
+    background-color: $secondary;
+    padding: 15% 0;
+
+    nav{
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            li{
+                padding: 0 2%;
+
+                a:link, a:visited{
+                    color: $icons;
+                    font-size: rem-calc(24);
+                }
+                a:hover, a:active{
+                    color: $footer;
+                }
+            }
+        }
+    }
+
+    h4{
+        font-size: rem-calc(11);
+        color: $footer;
+        text-align: center;
+        padding-top: 5%;
+        font-weight: 400;
+
+        span{
+            color: $white;
+        }
+    }
+}

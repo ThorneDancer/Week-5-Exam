@@ -1,3 +1,82 @@
 /* =============
     Journal
 ============= */
+#journal{
+    padding-top: 15%;
+
+    aside{
+
+        h1{
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            font-size: rem-cal(32);
+            font-weight: 700;
+        }
+    }
+
+    section:nth-child(2){
+
+        ul{
+
+            li{
+                background-color: $primary;
+                margin-bottom: 8%;
+
+                h1{
+                    font-family: 'Montserrat', sans-serif;
+                    text-align: center;
+                    font-size: rem-cal(28);
+                    font-weight: 700;
+                    padding: 5% 0;
+                    color: $secondary;
+                }
+
+                p{
+                    font-family: 'Lato', sans-serif;
+                    padding: 0 20px;
+                    font-size: rem-calc(19);
+                    color: $secondary;
+                }
+
+                p:last-child{
+                    padding: 5% 20px;
+                    font-weight: 700;
+                }
+            }
+
+            li:nth-child(1){
+
+                div{
+                    background-image: url("../img/journal/sign.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 200px;
+                }
+            }
+
+            li:nth-child(2){
+
+                div{
+                    background-image: url("../img/journal/pattern.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 200px;
+                }
+            }
+
+            li:nth-child(3){
+                margin-bottom: 15%;
+
+                div{
+                    background-image: url("../img/journal/cards.jpg");
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

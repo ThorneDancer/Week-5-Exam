@@ -1,3 +1,49 @@
 /* =============
     Hero
 ============= */
+#hero{
+    background-image: url("../img/hero/hero-1.jpg");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 694px;
+
+    section:nth-child(1){
+        text-align: center;
+        padding-top: 45%;
+
+        h1{
+            color: $tertiary;
+            font-size: rem-calc(24);
+            font-weight: 400;
+            padding-bottom: 2%;
+        }
+
+        h3{
+            color: $h3;
+            font-size: rem-calc(14);
+            font-weight: 400;
+        }
+    }
+
+    section:nth-child(2){
+
+
+        a:link, a:visited{
+            color: $white;
+            display: flex;
+            justify-content: center;
+            margin: 52% 39% 0;
+            border: 2.8px $white solid;
+            border-radius: rem-calc(100);
+            padding: 30px;
+            font-size: rem-calc(18);
+            font-weight: 400;
+        }
+
+        a:hover, a:active{
+            color: $h3;
+            border-color: $h3;
+        }
+    }
+}

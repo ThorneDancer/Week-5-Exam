@@ -327,10 +327,10 @@ a:link, a:visited {
 
 .project-grid {
   display: grid;
-  grid-template-areas: ". content .";
+  grid-template-areas: ". display .";
   grid-template-columns: 10px auto 10px; }
   .project-grid > div {
-    grid-area: content; }
+    grid-area: display; }
 
 /* =============
     Typography
@@ -365,12 +365,140 @@ textarea {
 /* =============
     Footer
 ============= */
+footer {
+  background-color: #080808;
+  padding: 15% 0; }
+  footer nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    footer nav ul li {
+      padding: 0 2%; }
+      footer nav ul li a:link, footer nav ul li a:visited {
+        color: #6B6B6B;
+        font-size: 1.5rem; }
+      footer nav ul li a:hover, footer nav ul li a:active {
+        color: #E1593C; }
+  footer h4 {
+    font-size: 0.6875rem;
+    color: #E1593C;
+    text-align: center;
+    padding-top: 5%;
+    font-weight: 400; }
+    footer h4 span {
+      color: #fff; }
+
 /* =============
     Hero
 ============= */
+#hero {
+  background-image: url("../img/hero/hero-1.jpg");
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 694px; }
+  #hero section:nth-child(1) {
+    text-align: center;
+    padding-top: 45%; }
+    #hero section:nth-child(1) h1 {
+      color: #1A4B58;
+      font-size: 1.5rem;
+      font-weight: 400;
+      padding-bottom: 2%; }
+    #hero section:nth-child(1) h3 {
+      color: #338595;
+      font-size: 0.875rem;
+      font-weight: 400; }
+  #hero section:nth-child(2) a:link, #hero section:nth-child(2) a:visited {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin: 52% 39% 0;
+    border: 2.8px #fff solid;
+    border-radius: 6.25rem;
+    padding: 30px;
+    font-size: 1.125rem;
+    font-weight: 400; }
+  #hero section:nth-child(2) a:hover, #hero section:nth-child(2) a:active {
+    color: #338595;
+    border-color: #338595; }
+
 /* =============
     Creative
 ============= */
+#creative {
+  padding-top: 15%;
+  background-color: #EEEEEE; }
+  #creative section:nth-child(1) {
+    padding-bottom: 25%;
+    display: grid;
+    grid-template-areas: ". content .";
+    grid-template-columns: 10px auto 10px; }
+    #creative section:nth-child(1) aside {
+      grid-area: content; }
+      #creative section:nth-child(1) aside h1 {
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: 2.25rem;
+        padding-bottom: 3%; }
+      #creative section:nth-child(1) aside p {
+        font-family: 'Lato', sans-serif;
+        font-size: 1rem;
+        text-align: justify;
+        line-height: 1.25rem; }
+  #creative section:nth-child(2) {
+    background-image: url("../img/hero/hero-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 360px; }
+
 /* =============
     Journal
 ============= */
+#journal {
+  padding-top: 15%; }
+  #journal aside h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: rem-cal(32);
+    font-weight: 700; }
+  #journal section:nth-child(2) ul li {
+    background-color: #EEEEEE;
+    margin-bottom: 8%; }
+    #journal section:nth-child(2) ul li h1 {
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      font-size: rem-cal(28);
+      font-weight: 700;
+      padding: 5% 0;
+      color: #080808; }
+    #journal section:nth-child(2) ul li p {
+      font-family: 'Lato', sans-serif;
+      padding: 0 20px;
+      font-size: 1.1875rem;
+      color: #080808; }
+    #journal section:nth-child(2) ul li p:last-child {
+      padding: 5% 20px;
+      font-weight: 700; }
+  #journal section:nth-child(2) ul li:nth-child(1) div {
+    background-image: url("../img/journal/sign.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px; }
+  #journal section:nth-child(2) ul li:nth-child(2) div {
+    background-image: url("../img/journal/pattern.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px; }
+  #journal section:nth-child(2) ul li:nth-child(3) {
+    margin-bottom: 15%; }
+    #journal section:nth-child(2) ul li:nth-child(3) div {
+      background-image: url("../img/journal/cards.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px; }
